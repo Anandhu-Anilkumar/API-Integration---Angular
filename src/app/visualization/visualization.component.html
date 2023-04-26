@@ -1,0 +1,23 @@
+<div class="content-wrapper">
+    <h2>Working Hours Table</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Employee Name</th>
+                <th>Total Working Time</th>
+            </tr>
+        </thead>
+        <tbody>
+            <ng-container *ngFor="let employee of employees">
+                <tr *ngIf="employee.name" [ngStyle]="rowStyle(employee)">
+                    <td>{{ employee.name }}</td>
+                    <td>{{ formatTime(employee.totalWorkingHours) }}</td>
+                </tr>
+            </ng-container>
+        </tbody>
+    </table>
+    <h2>Working Hours Piechart</h2>
+    <div class="chart-container">
+        <canvas id="MyChart">{{ chart }}</canvas>
+    </div>
+</div>

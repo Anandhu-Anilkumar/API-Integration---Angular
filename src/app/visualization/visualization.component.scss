@@ -1,0 +1,31 @@
+@import "../shared/breakpoint";
+@import "../shared/color";
+@import "../shared/font";
+@import "../shared/layout";
+
+h2 {
+    color: $color-maroon;
+    font-size: 2.5rem;
+    font-weight: $font-bold;
+    text-align: center;
+    padding: $spacer-3 0;
+}
+
+table {
+    width: 100%;
+    border: 3px solid;
+}
+
+th {
+    text-align: left;
+    border: 3px solid;
+    font-size: 1.25rem;
+    font-weight: $font-semi-bold;
+    padding: $spacer-2 $spacer-4;
+}
+
+td {
+    text-align: left;
+    border: 1px dotted;
+    padding: $spacer-1 $spacer-4;
+}

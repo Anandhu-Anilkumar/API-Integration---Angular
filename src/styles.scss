@@ -1,1 +1,70 @@
-/* You can add global styles to this file, and also import other style files */
+@import "app/shared/reset";
+@import "app/shared/breakpoint";
+@import "app/shared/color";
+@import "app/shared/font";
+@import "app/shared/layout";
+
+@font-face {
+    font-family: 'CustomFont';
+    src: url('assets/fonts/Poppins-Light.ttf') format('truetype');
+    font-weight: $font-light;
+}
+
+@font-face {
+    font-family: 'CustomFont';
+    src: url('assets/fonts/Poppins-Regular.ttf') format('truetype');
+    font-weight: $font-regular;
+}
+
+@font-face {
+    font-family: 'CustomFont';
+    src: url('assets/fonts/Poppins-Medium.ttf') format('truetype');
+    font-weight: $font-medium;
+}
+
+@font-face {
+    font-family: 'CustomFont';
+    src: url('assets/fonts/Poppins-SemiBold.ttf') format('truetype');
+    font-weight: $font-semi-bold;
+}
+
+@font-face {
+    font-family: 'CustomFont';
+    src: url('assets/fonts/Poppins-Bold.ttf') format('truetype');
+    font-weight: $font-bold;
+}
+
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'CustomFont', sans-serif;
+}
+
+html,
+body {
+    color: $color-black;
+    font-size: 1rem;
+    line-height: 1.5;
+    width: 100%;
+    min-height: 100%;
+    scroll-behavior: smooth;
+    font-weight: $font-regular;
+    overflow-x: hidden;
+    overflow-y: visible;
+}
+
+.content-wrapper {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: $spacer-3;
+}
+
+
+@include desktop {
+    .content-wrapper {
+        padding: $spacer-5;
+    }
+}
