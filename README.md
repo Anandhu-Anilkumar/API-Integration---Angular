@@ -28,4 +28,4 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Live URL
 
-https://employeedatavisualization.web.app/
+https://data-visualization-angular.web.app/
